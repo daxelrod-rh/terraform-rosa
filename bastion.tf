@@ -81,7 +81,7 @@ resource "aws_instance" "bastion_host" {
 #!/bin/bash
 set -e -x
 
-sudo dnf install -y wget curl python36 python36-devel net-tools gcc libffi-devel openssl-devel jq bind-utils podman
+sudo dnf install -y wget curl python3 python3-devel net-tools gcc libffi-devel openssl-devel jq bind-utils podman
 
 # ssm
 sudo dnf install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
